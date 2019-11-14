@@ -43,6 +43,10 @@ app.get('/signup', function(req, res)
     res.render('signup')
 })
 
+app.get('/tourpackages', isLoggedIn, function(req, res)
+{
+    res.render('tourpackages')
+})
 app.get('/login', function(req, res)
 {
     res.render('login')
