@@ -52,6 +52,25 @@ app.get('/singapore', isLoggedIn, function(req, res)
 {
     res.render('singapore')
 })
+
+app.get('/mtpilatus', isLoggedIn, function(req, res)
+{
+    res.render('mtpilatus')
+})
+
+app.get('/innsbruck', isLoggedIn, function(req, res)
+{
+    res.render('innsbruck')
+})
+app.get('/newyork', isLoggedIn, function(req, res)
+{
+    res.render('newyork')
+})
+
+app.get('/sydney', isLoggedIn, function(req, res)
+{
+    res.render('sydney')
+})
 app.get('/login', function(req, res)
 {
     res.render('login')
