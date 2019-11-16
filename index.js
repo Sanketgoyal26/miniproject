@@ -47,6 +47,11 @@ app.get('/tourpackages', isLoggedIn, function(req, res)
 {
     res.render('tourpackages')
 })
+
+app.get('/singapore', isLoggedIn, function(req, res)
+{
+    res.render('singapore')
+})
 app.get('/login', function(req, res)
 {
     res.render('login')
