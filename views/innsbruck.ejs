@@ -80,6 +80,7 @@ input{
     color: white;
     background:linear-gradient(to right, pink, purple);
     border: 2px solid white;
+    cursor: pointer;
 }
 
 .subbtn:hover{
@@ -261,7 +262,9 @@ input{
                 <label for="nop"  style="color: white;  font-size: 15px;">No Of Children:</label>
                 <input type="number" id="nop" min="1" max="1000">
 
-                <input class="subbtn" style="margin-left: 80px;" type="submit" value="Pay" class="btn">
+                <a href="/payment" class="onlbtn" style="text-decoration: none;">
+                    <input class="subbtn" style="margin-left: 80px; width: 150px; height: 35px; text-align: center; " value="Pay" class="btn">
+                </a>
         </div>
     </form>
 

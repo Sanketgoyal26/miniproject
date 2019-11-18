@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- <link href="style.css" rel="stylesheet"> -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <title>Travelex</title>
@@ -40,11 +39,6 @@
             }
         }
         setInterval(imgchg, 3000)
-
-
-
-
-
     </script>
     <style>
         * {
@@ -53,9 +47,10 @@
         }
 
         html {
-  scroll-behavior: smooth;
-  
-}
+            scroll-behavior: smooth;
+
+        }
+
         .header {
             height: 750px;
             background-size: cover;
@@ -65,27 +60,6 @@
             text-align: center;
             color: white;
         }
-
-        /* .top-navbar .navbar {
-            padding: 15px 0px;
-            width: 100%;
-        }
-        .top-navbar .navbar-light .navbar-nav .nav-link {
-            color: white;
-            font-size: 16px;
-            padding: 10px 20px;
-            border-radius: 4px;
-            text-transform: uppercase;
-        }
-        .top-navbar .navbar-light .navbar-nav .nav-item .nav-link:hover {
-            background: lightseagreen;
-            transition: 1s;
-            color: #ffffff;
-        }
-        .navbar1 {
-            width: 100px;
-            height: 20px;
-        } */
         .login-btn {
             width: 100px;
             padding: 8px 0;
@@ -289,7 +263,10 @@
                 margin-bottom: -40px;
             }
         }
-
+        .book-btn:hover{
+            transition: 1s;
+            transform: scale(1.2);
+        }
         .aboutus {
             padding: 100px;
             height: 500px;
@@ -383,28 +360,8 @@
 
 <body>
     <header class="top-navbar">
-        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-
-                <img style="width: 150px;"
-                    src="https://luxurylifestyleawards.com/wp/wp-content/uploads/2019/01/Travelex_Logo_Uniform.png "
-                    class="navbar1" alt="">
-
-
-                <div class="collapse navbar-collapse" id="navbars-rs-food">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
-                        <li class="nav-item "><a class="nav-link" href="#aboutus" >About us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/login">Log in</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/signup">Sign up</a></li>
-                </div>
-            </div>
-            </div>
-        </nav> -->
-
         <nav class="navbar navbar-expand-lg   fixed-top">
             <div class="container">
-                <!-- <a class="navbar-brand" href=""><img src></a> -->
                 <img style="width: 190px; height: 35px;"
                     src="https://luxurylifestyleawards.com/wp/wp-content/uploads/2019/01/Travelex_Logo_Uniform.png"
                     alt="travelex">
@@ -435,15 +392,17 @@
             </div>
         </nav>
     </header>
-
-
-
-
+    <div class="imdrender" style="display: none;">
+        <img src="https://wallpaperaccess.com/full/355030.jpg" alt="">
+        <img src="https://wallpaperplay.com/walls/full/1/1/3/272847.jpg" alt="">
+        <img src="https://i.pinimg.com/originals/a3/68/0a/a3680a12cf21dfb1c389dc6a7beaf90c.jpg" alt="">
+        <img src="https://assets3.thrillist.com/v1/image/2420645/size/tmg-gift_guide_default_2x.jpg" alt="">
+        <img src="https://i.pinimg.com/originals/8f/cf/a2/8fcfa28d2ec30597f8bf5d36f77b8167.jpg" alt="">
+        <img src="https://vistapointe.net/images/amsterdam-4.jpg" alt="">
+    </div>
     <section class="header hdd1" id="head1"
         style="background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('https://vistapointe.net/images/amsterdam-4.jpg')">
-        <!-- <div class="container">
-            <button type="button" class="login-btn">Login</button>
-        </div> -->
+
         <div class="one">
             <h1 class="txt1" style=" zoom: 200%;font-size: 55px;font-weight: 700;font-family: sans-serif;">Travel Across
                 the World</h1>
@@ -451,12 +410,6 @@
                 before</p>
         </div>
         <br>
-        <!-- <div class="input-group">
-
-            <input type="text" class="form-control" placeholder="
-            Search your city or Country">
-            <button type="submit" class="input-group-text btn">Search</button>
-        </div> -->
     </section>
 
     <section class="features">
@@ -470,7 +423,7 @@
                             <img
                                 src="https://static01.nyt.com/images/2017/01/18/world/australia-newsletter/australia-newsletter-articleLarge.jpg?quality=75&auto=webp&disable=upscale">
                         </div>
-                        <span class="price">1,00,000 INR</span> &nbsp
+                     <a href="/login" style="text-decoration: none;">   <span class="price">1,00,000 INR</span> &nbsp
                         <span class="ratings">
                             <i class="fa fa-star" aria-hidden="true"></i>
                             <i class="fa fa-star" aria-hidden="true"></i>
@@ -489,6 +442,7 @@
 
                             </p>
                         </div>
+                    </a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -497,7 +451,7 @@
                             <img
                                 src="https://cdn-04.independent.ie/life/travel/article34651285.ece/4f0c0/AUTOCROP/w620/zurich.jpg">
                         </div>
-                        <span class="price">1,50,000 INR</span> &nbsp
+                        <a href="/login" style="text-decoration: none;">   <span class="price">1,50,000 INR</span> &nbsp
                         <span class="ratings">
                             <i class="fa fa-star" aria-hidden="true"></i>
                             <i class="fa fa-star" aria-hidden="true"></i>
@@ -518,6 +472,7 @@
 
                             </p>
                         </div>
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -526,7 +481,7 @@
                             <img
                                 src="https://www.gannett-cdn.com/media/2018/12/15/USATODAY/usatsports/MotleyFool-TMOT-657f0436-21e9af86.jpg">
                         </div>
-                        <span class="price">2,50,000 INR</span> &nbsp
+                        <a href="/login" style="text-decoration: none;">  <span class="price">2,50,000 INR</span> &nbsp
                         <span class="ratings">
                             <i class="fa fa-star" aria-hidden="true"></i>
                             <i class="fa fa-star" aria-hidden="true"></i>
@@ -547,6 +502,7 @@
                                 financial and cultural centers.
                             </p>
                         </div>
+                    </a>
                     </div>
                 </div>
 
@@ -559,13 +515,13 @@
                             <img
                                 src="https://www.cleartrip.com/collections/wp-content/uploads/2018/04/palolem-beach.jpg">
                         </div>
-                        <span class="price">8,000 INR</span> &nbsp
+                        <a href="/login" style="text-decoration: none;"> <span class="price">8,000 INR</span> &nbsp
                         <span class="ratings">
                             <i class="fa fa-star" aria-hidden="true"></i>
                             <i class="fa fa-star" aria-hidden="true"></i>
                             <i class="fa fa-star" aria-hidden="true"></i>
                             <i class="fa fa-star" aria-hidden="true"></i>
-                            
+
 
                         </span>
                         <div class="placename">
@@ -574,11 +530,12 @@
                         <div class="summary">
                             <p>
                                 Goa is a state in western India with coastlines stretching along the Arabian Sea. Its
-                                long history as a Portuguese colony prior to 1961.Goa is also known for its beaches 
-                                
+                                long history as a Portuguese colony prior to 1961.Goa is also known for its beaches
+
 
                             </p>
                         </div>
+                    </a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -587,13 +544,13 @@
                             <img style="height: 235px;"
                                 src="https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2018/10/20/Pictures/himachal-hindustan-umbrella-september-shelter-saturday-september_d4fc0cb2-d456-11e8-841e-211dfd3178e1.jpg">
                         </div>
-                        <span class="price">9,000 INR</span> &nbsp
+                        <a href="/login" style="text-decoration: none;"><span class="price">9,000 INR</span> &nbsp
                         <span class="ratings">
                             <i class="fa fa-star" aria-hidden="true"></i>
                             <i class="fa fa-star" aria-hidden="true"></i>
                             <i class="fa fa-star" aria-hidden="true"></i>
                             <i class="fa fa-star" aria-hidden="true"></i>
-                        
+
 
 
                         </span>
@@ -602,19 +559,21 @@
                         </div>
                         <div class="summary">
                             <p>
-                                Shimla is the capital of the northern Indian state of Himachal Pradesh, in the Himalayan foothills.
-                                 Once the summer capital of British India.
+                                Shimla is the capital of the northern Indian state of Himachal Pradesh, in the Himalayan
+                                foothills.
+                                Once the summer capital of British India.
                             </p>
                         </div>
+                    </a>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="feature-box">
                         <div class="feature-img">
-                            <img
-                                src="https://cdn1.goibibo.com/t_tg_fs/nilgiris-ooty-149342248226-orijgp.jpg" style="height: 235px;">
+                            <img src="https://cdn1.goibibo.com/t_tg_fs/nilgiris-ooty-149342248226-orijgp.jpg"
+                                style="height: 235px;">
                         </div>
-                        <span class="price">12,000 INR</span> &nbsp
+                        <a href="/login" style="text-decoration: none;">  <span class="price">12,000 INR</span> &nbsp
                         <span class="ratings">
                             <i class="fa fa-star" aria-hidden="true"></i>
                             <i class="fa fa-star" aria-hidden="true"></i>
@@ -630,9 +589,11 @@
                         </div>
                         <div class="summary">
                             <p>
-                                Ooty (short for Udhagamandalam) is a resort town in the Western Ghats mountains, in southern India's Tamil Nadu state.
-                                 Founded as a British Raj summer resort.
+                                Ooty (short for Udhagamandalam) is a resort town in the Western Ghats mountains, in
+                                southern India's Tamil Nadu state.
+                                Founded as a British Raj summer resort.
                         </div>
+                    </a>
                     </div>
                 </div>
 
@@ -650,7 +611,8 @@
                         <p>Enjoy your vacations at low cost</p>
                     </div>
                     <div class="col-md-4">
-                        <button type="button" class="book-btn"><a style="color: white; text-decoration: none;" href="/login">Book now</a></button>
+                        <button type="button" class="book-btn"><a style="color: white; text-decoration: none;"
+                                href="/login">Book now</a></button>
                     </div>
                 </div>
             </div>
