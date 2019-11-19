@@ -330,7 +330,10 @@
             color: turquoise;
             transition: 1s;
         }
-
+        .navbar-light .navbar-nav .prosection ul li a:hover {
+            color: turquoise;
+            transition: 1s;
+        }
         .navbar-nav {
             text-align: center;
         }
@@ -355,43 +358,97 @@
                 background: #fff;
             }
         }
+      
+
+        .prosection{
+            display: none;
+         
+        }
+       
+        .navbar-collapse ul li:hover .prosection{
+            display: block;
+                background-color:transparent;
+                position:sticky;
+                margin-top: 5px;
+                margin-left: -15px;
+                color: white;
+              
+                
+                
+                
+
+        }
+
+        .navbar-collapse ul li:hover .prosection ul{
+           display: block;
+           position: absolute;
+          
+        }
+
+        .navbar-collapse ul li:hover .prosection ul li{
+            width: 100px;
+                padding:4px;
+                text-align: center;
+                background: transparent;
+                border-radius:20px;
+
+        }
+
+        .navbar-collapse ul li:hover .prosection ul li:last-child{
+           border-bottom: none;
+                
+        }
+        .mainmenu ul li:hover .prosection ul li a:hover{
+             color: turquoise
+               
+        } 
+        .npful li a:hover
+        {
+              color: turquoise;
+        }
     </style>
 </head>
 
 <body>
-    <header class="top-navbar">
-        <nav class="navbar navbar-expand-lg   fixed-top">
-            <div class="container">
-                <img style="width: 190px; height: 35px;"
-                    src="https://luxurylifestyleawards.com/wp/wp-content/uploads/2019/01/Travelex_Logo_Uniform.png"
-                    alt="travelex">
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item ">
-                            <a class="nav-link" href="#">Home </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#aboutus">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/login">Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/signup">Sign Up</a>
-                        </li>
-                    </ul>
-
-                </div>
-
-            </div>
-        </nav>
-    </header>
+        <header class="top-navbar">
+                <nav class="navbar navbar-expand-lg navbar-light  fixed-top">
+                   <div class="container">
+                       <!-- <a class="navbar-brand" href=""><img src></a> -->
+                       <img style="width: 190px; height: 35px;"
+                           src="https://luxurylifestyleawards.com/wp/wp-content/uploads/2019/01/Travelex_Logo_Uniform.png"
+                           alt="travelex">
+                       <button class="navbar-toggler" type="button" data-toggle="collapse"
+                           data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                           aria-label="Toggle navigation">
+                           <span class="navbar-toggler-icon"></span>
+                       </button>
+       
+                       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                           <ul class="navbar-nav ml-auto">
+                               <li class="nav-item ">
+                                   <a class="nav-link" href="#"><i class="fa fa-home" aria-hidden="true"></i>
+                                    Home </a>
+                               </li>
+                               <li class="nav-item">
+                                   <a class="nav-link" href="#aboutus"><i class="fa fa-users" aria-hidden="true"></i>
+                                    About Us</a>
+                               </li>
+                               <li class="nav-item">
+                                   <a class="nav-link" href="/login"><i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                                    Login</a>
+                               </li>
+                               <li class="nav-item">
+                                   <a class="nav-link profile" href="/signup"><i class="fa fa-sign-in" aria-hidden="true"></i>
+                                    Signup </a>
+                                   
+                               </li>
+                           </ul>
+       
+                       </div>
+       
+                   </div>
+               </nav>
+           </header>
     <div class="imdrender" style="display: none;">
         <img src="https://wallpaperaccess.com/full/355030.jpg" alt="">
         <img src="https://wallpaperplay.com/walls/full/1/1/3/272847.jpg" alt="">
@@ -699,12 +756,12 @@
             <p style="color: white; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 20px;">Useful Links</p>
 
             <ul style="list-style: none;">
-                <li><a style="text-decoration: none;" href="">FAQ</a></li>
-                <li><a style="text-decoration: none;" href="">About</a></li>
-                <li><a style="text-decoration: none;" href="">Terms and Condition</a></li>
-                <li><a style="text-decoration: none;" href="">Privacy Policy</a></li>
-                <li><a style="text-decoration: none;" href="">Terms of Use</a></li>
-                <li><a style="text-decoration: none;" href="">Refund Policy</a></li>
+                    <li><a  style="text-decoration: none;" href="/last/#FAQ">FAQ</a></li>
+                
+                    <li><a  style="text-decoration: none;" href="/last/#TAC">Terms and Condition</a></li>
+                    <li><a style="text-decoration: none;" href="/last/#PP">Privacy Policy</a></li>
+                    <li><a  style="text-decoration: none;" href="/last/#TOU">Terms of Use</a></li>
+                    <li><a  style="text-decoration: none;" href="/last/#RP">Refund Policy</a></li>
             </ul>
 
         </div>
