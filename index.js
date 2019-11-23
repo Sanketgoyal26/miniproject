@@ -178,7 +178,7 @@ if((req.body.dob != req.user.dob) && (req.body.dob != null)){
     })      
 }
 else if(req.body.dob == null){
-    console.log("gender not changed")
+    console.log("dob not changed")
 }
 if((req.body.address != req.user.address) && ((req.body.address != null) || (req.body.address != ''))){
     var address=req.body.address
