@@ -67,19 +67,21 @@
    
     <form>
         Name On Card:</br>
-        <input type="text" name="fname" placeholder="Name On Card"></br>
+        <input id="noc" type="text" name="fname" placeholder="Name On Card" required></br>
         Credit Card Number:</br>
-        <input type="text" name="fname" placeholder="Credit Card Number"></br>
+        <input id="ccn" type="text" name="fname" placeholder="Credit Card Number" required></br>
         Exp Month:</br>
-        <input type="text" name="fname" placeholder=" Exp Month"></br>
+        <input id="em" type="text" name="fname" placeholder=" Exp Month" required></br>
         Exp Year:</br>
-        <input type="text" name="fname" placeholder="Exp Year"></br>
+        <input id="ey" type="text" name="fname" placeholder="Exp Year" required></br>
         CVV:</br>
-        <input type="text" name="fname" placeholder="CVV"></br>
-      <a class="olala" style="text-decoration: none;" href="/payment/thanks"><input style="width: 760px; cursor: pointer ; text-align: center; height: 30px; border-radius: 5px; color: white;font-weight: 40px; text-decoration: none;" class="btn" value="pay"></a> 
+        <input id="cvv" type="text" name="fname" placeholder="CVV" required></br>
+       <button class="btn"   style="width: 760px; cursor: pointer ; text-align: center; height: 50px; border-radius: 5px; color: white;font-weight: 40px; text-decoration: none;" type="submit">
+        Pay</button>
+      
      </form>
     
 </div>
-    
+
 </body>
 </html>

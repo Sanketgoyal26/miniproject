@@ -251,21 +251,35 @@ input{
         <div class="details">
                 
                 
-                <label for="fadte" style="color: white; font-size: 15px;">From Date:</label>
-                <input type="date" id="fdate">
-                <label for="tdate" style="color: white;  font-size: 15px;">To Date:</label>
-                <input type="date" id="tdate">
-                <label for="nop"  style="color: white;  font-size: 15px;">No Of Adults:</label>
-                <input type="number" id="nop" min="1" max="1000">
+            <label for="fadte" style="color: white; font-size: 15px;">From Date:</label>
+            <input type="date" id="fdate" required>
+            <label for="nop"  style="color: white;  font-size: 15px;">No Of Adults:</label>
+            <input type="number" id="sank" min="1" max="1000" required>
+            <label for="nop"  style="color: white;  font-size: 15px;">No Of Children:</label>
+            <input type="number" id="child"  min="1" max="1000">
 
-                <label for="nop"  style="color: white;  font-size: 15px;">No Of Children:</label>
-                <input type="number" id="nop" min="1" max="1000">
+<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+                               <button class="subbtn" style=" border-radius: 40px; width: 170px; background-color: transparent; color: white;" onclick="calc()" type="button">
+                       Show amount
+                </button>
+                <p id="pay" style="color: white; font-family: Verdana, Geneva, Tahoma, sans-serif; padding-left: 40px; font-size:20px;"></p>
 
-                <a href="/payment" class="onlbtn" style="text-decoration: none;">
-                    <input class="subbtn" style="margin-left: 80px; width: 150px; height: 35px; text-align: center; " value="Pay" class="btn">
-                </a>
-        </div>
-    </form>
+            <a href="/payment" class="onlbtn" style="text-decoration: none;">
+                <input class="subbtn" style="margin-left: 80px; width: 150px; height: 35px; text-align: center; " value="Pay" class="btn">
+            </a>
+    </div>
+</form>
+
+
+<script>
+    var calc=()=>{
+        var x=document.getElementById("sank").value
+        var y=document.getElementById("child").value   
+        var vb=(8000*x)+((8000)/2*y)
+        document.getElementById("pay").innerHTML=vb
+
+    }
+</script>
 
 </body>
 </html>
